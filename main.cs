@@ -11,9 +11,12 @@ class Program {
  //swap.Swapping();
 // BinarySearch binary = new BinarySearch();
 //  binary.search();
-    // PrimeNumbers prime = new PrimeNumbers();
-    // prime.Sieve_of_Eratosthenes();
-    UniqueNumber uniqueNum = new UniqueNumber();
-    uniqueNum.Caller();
+    // PrimeNumbers obj = new PrimeNumbers();
+    // obj.Sieve_of_Eratosthenes();
+    // UniqueNumber obj = new UniqueNumber();
+    // DuplicateInArray obj = new DuplicateInArray();
+    // UnqueOccurences obj = new UnqueOccurences();
+    Pivot_BinarySearch obj = new Pivot_BinarySearch();
+    obj.Caller();
   }
 }
