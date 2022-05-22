@@ -29,7 +29,7 @@ public class PalindromeString
         string[] palindromeString = { "abba", "madam", "chuku", "nun", "abcabc", "maam" };
         foreach (var str in palindromeString)
         {
-            
+            //test from vs codes
             Console.WriteLine(str+ ": "+ Palindrome(str));
         }
     }
