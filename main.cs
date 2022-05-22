@@ -2,7 +2,7 @@ using System;
 
 class Program {
   public static void Main (string[] args) {
-    Console.WriteLine ("Hello World");
+  //  Console.WriteLine ("Hello World");
    // ReverseInteger rev = new ReverseInteger();
    // rev.reverseInt();
    //PowerOfTwo power = new PowerOfTwo();
@@ -16,7 +16,8 @@ class Program {
     // UniqueNumber obj = new UniqueNumber();
     // DuplicateInArray obj = new DuplicateInArray();
     // UnqueOccurences obj = new UnqueOccurences();
-    Pivot_BinarySearch obj = new Pivot_BinarySearch();
+  // Pivot_BinarySearch obj = new Pivot_BinarySearch();
+    PalindromicSubstrings obj = new PalindromicSubstrings();
     obj.Caller();
   }
 }
