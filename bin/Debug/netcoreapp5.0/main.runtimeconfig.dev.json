@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/runner/.dotnet/store/|arch|/|tfm|",
-      "/home/runner/.nuget/packages"
+      "C:\\Users\\akanksha.saxena\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\akanksha.saxena\\.nuget\\packages"
     ]
   }
 }

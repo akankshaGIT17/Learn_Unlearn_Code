@@ -10,7 +10,7 @@ public class PalindromeString{
         while (i < j) {
  
             // If there is a mismatch
-            if (str.ElementAt(i) != str.ElementAt(j))
+            if (str[i] != str[j])
                 return false;
  
             // Increment first pointer and
