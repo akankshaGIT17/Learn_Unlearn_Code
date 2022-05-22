@@ -17,7 +17,8 @@ class Program {
     // DuplicateInArray obj = new DuplicateInArray();
     // UnqueOccurences obj = new UnqueOccurences();
   // Pivot_BinarySearch obj = new Pivot_BinarySearch();
-    PalindromicSubstrings obj = new PalindromicSubstrings();
+  //  PalindromicSubstrings obj = new PalindromicSubstrings();
+PalindromeString obj = new PalindromeString();
     obj.Caller();
   }
 }
