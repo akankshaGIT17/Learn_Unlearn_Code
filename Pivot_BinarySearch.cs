@@ -1,9 +1,10 @@
 using System;
+//https://leetcode.com/problems/find-pivot-index/
 public class Pivot_BinarySearch
 {
     public void Caller()
     {
-        int[] arr = { 17, 21, 23, 26, 13, 15 };
+        int[] arr = { 1,7,3,6,5,6 };
         int s = 0;
         int e = arr.Length - 1;
         int mid = s + (e - s) / 2;
