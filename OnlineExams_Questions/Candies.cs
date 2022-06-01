@@ -19,8 +19,6 @@ public class Candies
         // Count number of complete turns
         int count = 0;
      
-        // Get the last term
-        int ind = 1;
      
         // Stores the number of candies
         int []arr=new int[k];
