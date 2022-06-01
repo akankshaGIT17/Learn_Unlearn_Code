@@ -23,7 +23,12 @@ class Program
         //PalindromeString obj = new PalindromeString();
         //FirstLastElementInArray obj = new FirstLastElementInArray();
       //  PeakElement obj = new PeakElement();
-      SearchInRotatedSortedArray obj = new SearchInRotatedSortedArray();
-        obj.Caller();
+     // SearchInRotatedSortedArray obj = new SearchInRotatedSortedArray();
+       // obj.Caller();
+       /*
+       ---------------------SDE SHEETS - FARAZ------------------
+       */
+       AddString fSheet = new AddString();
+       fSheet.Caller();
     }
 }
