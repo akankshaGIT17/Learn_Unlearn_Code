@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-//https://leetcode.com/problems/add-strings/
+//https://leetcode.com/problems/longest-common-prefix/
 //NOT my solution
 public class LongestCommonPrefix{
 public string LongestCommonPrefixFunc(string[] strs) {
