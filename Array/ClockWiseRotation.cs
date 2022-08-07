@@ -1,4 +1,6 @@
 //https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one2614/1?page=1&curated[]=2&sortBy=submissions
+using System;
+
 public class ClockWiseRotation
 {
     public bool PRINT(int[] a)

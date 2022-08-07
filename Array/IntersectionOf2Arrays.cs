@@ -8,15 +8,16 @@ namespace main.Array
 {
    public class IntersectionOf2Arrays
     {
-        int getIntersection(int[] ar1, int m, int[] ar2, int n)
+        List<int> getIntersection(int[] ar1, int m, int[] ar2, int n)
         {
-            int i = j = 0;
+            int i = 0;
+            int j = 0;
             List<int> res = new List<int>();
             while (i<m && j < n)
             {
                 if(ar1[i] == ar2[j])
                 {
-                    res.Add(arr1[i]);
+                    res.Add(ar1[i]);
                     i ++; j++;
                 }
                 if(ar1[1]< ar1[j])

@@ -1,3 +1,5 @@
+using main;
+using main.LinkList;
 using System;
 
 class Program
@@ -18,17 +20,22 @@ class Program
         // UniqueNumber obj = new UniqueNumber();
         // DuplicateInArray obj = new DuplicateInArray();
         // UnqueOccurences obj = new UnqueOccurences();
-         //Pivot_BinarySearch obj = new Pivot_BinarySearch();
+        //Pivot_BinarySearch obj = new Pivot_BinarySearch();
         //  PalindromicSubstrings obj = new PalindromicSubstrings();
         //PalindromeString obj = new PalindromeString();
         //FirstLastElementInArray obj = new FirstLastElementInArray();
-      //  PeakElement obj = new PeakElement();
-     // SearchInRotatedSortedArray obj = new SearchInRotatedSortedArray();
-       // obj.Caller();
-       /*
-       ---------------------SDE SHEETS - FARAZ------------------
-       */
-      //  AddString fSheet = new AddString();
-      //  fSheet.Caller();
+        //  PeakElement obj = new PeakElement();
+        // SearchInRotatedSortedArray obj = new SearchInRotatedSortedArray();
+        // obj.Caller();
+        /*
+        ---------------------SDE SHEETS - FARAZ------------------
+        */
+        //  AddString fSheet = new AddString();
+        //  fSheet.Caller();
+        /*
+         *  ---------- LinlList -------------------
+         */
+        ReverseLinkList linkList = new ReverseLinkList();
+        linkList.Call();
     }
 }

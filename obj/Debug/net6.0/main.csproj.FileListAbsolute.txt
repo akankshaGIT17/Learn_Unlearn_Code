@@ -2,7 +2,6 @@ D:\Akanksha\GitHub\bin\Debug\net6.0\main.exe
 D:\Akanksha\GitHub\bin\Debug\net6.0\main.deps.json
 D:\Akanksha\GitHub\bin\Debug\net6.0\main.runtimeconfig.json
 D:\Akanksha\GitHub\bin\Debug\net6.0\main.dll
-D:\Akanksha\GitHub\bin\Debug\net6.0\ref\main.dll
 D:\Akanksha\GitHub\bin\Debug\net6.0\main.pdb
 D:\Akanksha\GitHub\obj\Debug\net6.0\main.csproj.AssemblyReference.cache
 D:\Akanksha\GitHub\obj\Debug\net6.0\main.GeneratedMSBuildEditorConfig.editorconfig
@@ -13,3 +12,4 @@ D:\Akanksha\GitHub\obj\Debug\net6.0\main.dll
 D:\Akanksha\GitHub\obj\Debug\net6.0\ref\main.dll
 D:\Akanksha\GitHub\obj\Debug\net6.0\main.pdb
 D:\Akanksha\GitHub\obj\Debug\net6.0\main.genruntimeconfig.cache
+D:\Akanksha\GitHub\obj\Debug\net6.0\refint\main.dll

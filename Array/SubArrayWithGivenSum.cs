@@ -1,9 +1,11 @@
-﻿namespace main.Array
+﻿using System;
+
+namespace main.Array
 {
     //https://www.geeksforgeeks.org/find-subarray-with-given-sum/
    public class SubArrayWithGivenSum
     {
-        public bool PRINT(int[] a)
+        public void PRINT(int[] a)
         {
             int[] arr = { 2, 7, 11, 15 };
             int sum = 9;
