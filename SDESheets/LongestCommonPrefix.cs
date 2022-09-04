@@ -22,7 +22,33 @@ public string LongestCommonPrefixFunc(string[] strs) {
         }
         return res.Substring(0, i);
     }
- public void Caller()
+
+    public string MySolution(string[] listStrings)
+    {// Fails for {"aaa","aa","aaa"}
+        if (listStrings.Length == 0)
+            return "";
+        if (listStrings.Length == 1)
+            return listStrings[0];
+        string cur = listStrings[0];
+        string s = "";
+        for (int i = 1; i < listStrings.Length; i++)
+        {
+            s = string.Empty;
+            for (int k = 0; k < listStrings[i].Length; k++)
+            {
+                if (k < s.Length && s[k] == listStrings[i][k])
+                {
+                    s = s + cur[k];
+
+                }
+                else break;
+            }
+        }
+        Console.WriteLine(s);
+        return string.Empty;
+    }
+
+    public void Caller()
     {
         string[] arr = {"flower","flow","flight"};
             //  Console.WriteLine(input);
