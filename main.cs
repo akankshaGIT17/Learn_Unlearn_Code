@@ -45,7 +45,7 @@ class Program
         //StringAddition str = new StringAddition();
         //LongestCommonPrefix str = new LongestCommonPrefix();
         //str.Caller(); 
-        NewYearSwapping ny = new NewYearSwapping();
+        NewYearChaos ny = new NewYearChaos();
         ny.caller();
     }
 }
