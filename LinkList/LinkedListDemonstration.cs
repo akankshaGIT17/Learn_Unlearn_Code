@@ -15,7 +15,25 @@ namespace main.LinkList
     public class MyLinkedList
     {
         public LLNode head;
+        public LLNode getNode(int data)
+        {
+            // allocate memory for the node
+            LLNode newNode = new LLNode();
 
+            // put in the data
+            newNode.data = data;
+            newNode.next = null;
+            return newNode;
+        }
+
+       public void printList(LLNode head)
+        {
+            while (head != null)
+            {
+                Console.Write(head.data + " ");
+                head = head.next;
+            }
+        }
         public void printAllNodes()
         {
             LLNode current = head;
@@ -25,8 +43,26 @@ namespace main.LinkList
                 current = current.next;
             }
         }
+        //Pushes at the begining
+        public LLNode push(LLNode head_ref, int new_data)
+        {
+            /* allocate node */
+            LLNode new_node = new LLNode();
 
-        public void AddFirst(Object data)
+            /* put in the data */
+            new_node.data = new_data;
+
+            /* link the old list off the new node */
+            new_node.next = (head_ref);
+
+            /* move the head to point to the new node */
+            (head_ref) = new_node;
+
+            return head_ref;
+        }
+
+
+        public void AddFirst( LLNode head, Object data)
         {
             LLNode toAdd = new LLNode();
 
@@ -35,7 +71,41 @@ namespace main.LinkList
 
             head = toAdd;
         }
+        void deleteNode(int position)
+        {
 
+            // If linked list is empty
+            if (head == null)
+                return;
+
+            // Store head node
+            LLNode temp = head;
+
+            // If head needs to be removed
+            if (position == 0)
+            {
+
+                // Change head
+                head = temp.next;
+                return;
+            }
+
+            // Find previous node of the node to be deleted
+            for (int i = 0; temp != null && i < position - 1;
+                 i++)
+                temp = temp.next;
+
+            // If position is more than number of nodes
+            if (temp == null || temp.next == null)
+                return;
+
+            // Node temp->next is the node to be deleted
+            // Store pointer to the next of node to be deleted
+            LLNode next = temp.next.next;
+
+            // Unlink the deleted node from list
+            temp.next = next;
+        }
         public void AddLast(Object data)
         {
             if (head == null)
@@ -59,6 +129,31 @@ namespace main.LinkList
                 current.next = toAdd;
             }
         }
+
+        void caller() {
+            LLNode llist = new LLNode();
+
+            AddFirst(head,7);
+            AddFirst(head,1);
+            AddFirst(head,3);
+            AddFirst(head, 2);
+            AddFirst(head, 8);
+
+            Console.WriteLine("\nCreated Linked list is: ");
+            printAllNodes();
+
+            // Delete node at position 4
+            deleteNode(4);
+
+            Console.WriteLine("\nLinked List after "
+                              + "Deletion at position 4: ");
+            printAllNodes();
+
+            //////////////PRINT AFTER Nth////////////////
+            ///
+           
+        }
+    
     }
 
     public class LinkedListPredefined

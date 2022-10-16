@@ -1,0 +1,3 @@
+﻿https://www.geeksforgeeks.org/remove-every-k-th-node-linked-list/
+
+Move next from the above question
