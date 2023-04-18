@@ -1,0 +1,67 @@
+// Was taken from chat GPT
+To implement a data structure for efficient retrieval and update of inventory, we can use a binary indexed tree (BIT) also known as a Fenwick tree. A binary indexed tree is a data structure that allows efficient updates and queries for the cumulative sum of a range of values.
+
+Here's an example implementation of a Fenwick tree in Java that supports the required methods with O(log n) time complexity:
+
+// CODE
+
+public class InventoryTracker {
+    private final float[] supplies;
+    private final float[] demands;
+    private final float[] tree;
+
+    public InventoryTracker(int numBuckets) {
+        supplies = new float[numBuckets];
+        demands = new float[numBuckets];
+        tree = new float[numBuckets + 1];
+    }
+
+    public void addSupply(int bucket, float delta) {
+        supplies[bucket] += delta;
+        updateTree(bucket, delta);
+    }
+
+    public void addDemand(int bucket, float delta) {
+        demands[bucket] += delta;
+        updateTree(bucket, -delta);
+    }
+
+    public float getInventory(int bucket) {
+        return getPrefixSum(bucket) + supplies[bucket] - demands[bucket];
+    }
+
+    private void updateTree(int bucket, float delta) {
+        bucket++;
+        while (bucket < tree.length) {
+            tree[bucket] += delta;
+            bucket += (bucket & -bucket);
+        }
+    }
+
+    private float getPrefixSum(int bucket) {
+        float sum = 0;
+        bucket++;
+        while (bucket > 0) {
+            sum += tree[bucket];
+            bucket -= (bucket & -bucket);
+        }
+        return sum;
+    }
+}
+
+
+
+// Explanation
+
+In this implementation, we maintain three arrays: supplies and demands to keep track of the supply and demand for each bucket, and tree which represents the binary indexed tree.
+
+The addSupply and addDemand methods update the supplies and demands arrays, respectively, and then call the updateTree method to update the binary indexed tree.
+
+The getInventory method calculates the inventory for a given bucket by calling the getPrefixSum method to calculate the cumulative sum of supply-demand pairs up to that bucket, and then adding the supply and subtracting the demand for that bucket.
+
+The updateTree method updates the binary indexed tree by adding delta to the values at all indices corresponding to ancestor nodes of the given bucket. This is done by repeatedly adding delta to the node at index bucket, and then moving to the next ancestor node by adding the lowest set bit of bucket to it.
+
+The getPrefixSum method calculates the cumulative sum of values up to the given bucket by repeatedly adding the value at each ancestor node to the sum, and then moving to the parent node by subtracting the lowest set bit of bucket from it.
+
+
+
